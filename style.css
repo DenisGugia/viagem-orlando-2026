@@ -1,472 +1,253 @@
 :root {
-    --primary-blue: #0077b6;
-    --disney-gradient: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
-    --universal-gradient: linear-gradient(135deg, #03045e 0%, #023e8a 100%);
-    --magic-gradient: linear-gradient(135deg, #7209b7 0%, #560bad 100%);
-    --off-gradient: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
+    --primary-color: #6c5ce7;
+    --secondary-color: #00cec9;
+    --universal-color: #0984e3;
+    --disney-color: #e84393;
+    --off-color: #fdcb6e;
+    --success-color: #00b894;
+    --vip-color: #fd79a8;
+    --bg-color: #f0f3f8;
+    --text-color: #2d3436;
     --card-bg: #ffffff;
-    --text-dark: #333333;
-    --text-light: #f8f9fa;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f0f4f8;
-    color: var(--text-dark);
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+ul { padding-left: 0; list-style: none; }
+
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(to bottom right, #4facfe 0%, #00f2fe 100%);
-    position: relative;
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
     color: white;
-    overflow: hidden;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-    opacity: 0.3;
-    z-index: 1;
-}
-
-.hero-content {
+    text-align: center;
+    padding: 6rem 1rem 4rem;
     position: relative;
-    z-index: 2;
-    padding: 2rem;
-    animation: fadeInUp 1s ease-out;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 10px 30px rgba(108, 92, 231, 0.3);
 }
 
-.hero h1 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    font-weight: 300;
-}
+.hero h1 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+.subtitle { font-size: 1.2rem; opacity: 0.9; margin-bottom: 1rem; font-weight: 600; }
 
 .date-badge {
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
     padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    display: inline-block;
+    margin: 1rem 0;
+    backdrop-filter: blur(5px);
+    font-weight: bold;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2.5rem;
     background: white;
-    color: var(--primary-blue);
-    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem 2.5rem;
     border-radius: 50px;
+    text-decoration: none;
     font-weight: 800;
     font-size: 1.1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
+.cta-button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
-/* Sections General */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 1.5rem;
-}
+/* Layout Geral */
+.container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+section { margin-bottom: 4rem; }
+section h2 { text-align: center; color: var(--primary-color); font-size: 2.2rem; margin-bottom: 2rem; }
 
-h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--primary-blue);
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--primary-blue);
-    border-radius: 2px;
-}
-
-/* Timeline */
-.timeline-container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 2rem; /* Mobile alignment */
-    width: 4px;
-    background: #e0e0e0;
-    border-radius: 2px;
-}
-
-.timeline-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    padding: 0;
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-left: 5px solid transparent;
-    position: relative;
-    margin-left: 4rem; /* Space for line */
-    overflow: hidden;
-}
-
-.timeline-card::before {
-    content: '';
-    position: absolute;
-    left: -2.8rem; /* Center on line */
-    top: 1.5rem;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+/* Hotel Rico */
+.hotel-detail-card {
     background: white;
-    border: 4px solid var(--primary-blue);
-    z-index: 2;
-    transition: transform 0.3s;
-}
-
-.timeline-card:hover {
-    transform: translateX(5px);
-    box-shadow: var(--shadow-hover);
-}
-
-.timeline-card:hover::before {
-    transform: scale(1.2);
-}
-
-/* Card Types Colors */
-.timeline-card.universal { border-left-color: #023e8a; }
-.timeline-card.universal::before { border-color: #023e8a; }
-
-.timeline-card.disney { border-left-color: #7209b7; }
-.timeline-card.disney::before { border-color: #7209b7; }
-
-.timeline-card.mix { border-left-color: #00b4d8; }
-.timeline-card.mix::before { border-color: #00b4d8; }
-
-.timeline-card.off { border-left-color: #fb8500; }
-.timeline-card.off::before { border-color: #fb8500; }
-
-.card-header {
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card-title h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
-}
-
-.card-title .date {
-    font-size: 0.9rem;
-    color: #666;
-    font-weight: 600;
-}
-
-.day-badge {
-    background: #f0f0f0;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #555;
-    margin-right: 1rem;
-}
-
-.card-icon {
-    font-size: 1.5rem;
-    color: #ccc;
-    transition: color 0.3s;
-}
-
-.timeline-card.universal .card-icon { color: #023e8a; }
-.timeline-card.disney .card-icon { color: #7209b7; }
-.timeline-card.mix .card-icon { color: #00b4d8; }
-.timeline-card.off .card-icon { color: #fb8500; }
-
-.card-body {
-    max-height: 0;
+    border-radius: 25px;
     overflow: hidden;
-    padding: 0 1.5rem;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    background: #f9f9f9;
-}
-
-.timeline-card.active .card-body {
-    max-height: 200px; /* Adjust if content is larger */
-    padding: 0 1.5rem 1.5rem 1.5rem;
-    border-top: 1px solid #eee;
-}
-
-.highlight {
-    margin-top: 1rem;
-    padding: 0.8rem;
-    background: rgba(0, 119, 182, 0.1);
-    border-radius: 8px;
-    font-weight: 600;
-    color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-/* Hotels */
-.hotels-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .hotels-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+    .hotel-detail-card { flex-direction: row; }
+    .hotel-image-area { width: 40%; min-height: 300px; }
+    .hotel-info { width: 60%; padding: 2.5rem; }
 }
 
-.hotel-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
-}
-
-.hotel-card:hover {
-    transform: translateY(-5px);
-}
-
-.hotel-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.hotel-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: rgba(0,0,0,0.7);
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.hotel-content {
-    padding: 1.5rem;
-}
-
-.hotel-content h3 {
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
-}
-
-.hotel-desc {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.hotel-benefits {
-    list-style: none;
-}
-
-.hotel-benefits li {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+.hotel-image-area {
+    background: linear-gradient(45deg, #2d3436, #636e72);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+}
+
+.hotel-img-placeholder i { font-size: 5rem; color: rgba(255,255,255,0.2); }
+
+.hotel-price-tag {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--success-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-align: right;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hotel-price-tag .label { display: block; font-size: 0.7rem; text-transform: uppercase; opacity: 0.9; }
+.hotel-price-tag .price { display: block; font-size: 1.5rem; font-weight: 800; }
+
+.hotel-info { padding: 1.5rem; }
+.hotel-info h3 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-color); }
+.location { color: #666; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature { font-size: 0.9rem; color: #555; display: flex; align-items: center; gap: 0.5rem; }
+.feature i { color: var(--primary-color); }
+
+.desc { color: #666; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+.text-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
+.text-link:hover { text-decoration: underline; }
 
-.hotel-benefits li i {
-    color: var(--primary-blue);
+/* Timeline */
+.instruction { text-align: center; color: #888; margin-bottom: 1.5rem; }
+.timeline { display: flex; flex-direction: column; gap: 1rem; }
+
+.day-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 6px solid #ccc;
 }
 
-/* Budget */
-.budget-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+.day-card.universal { border-left-color: var(--universal-color); }
+.day-card.disney { border-left-color: var(--disney-color); }
+.day-card.off { border-left-color: var(--off-color); }
+
+.day-header { padding: 1.2rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+.day-number { font-weight: bold; color: #888; margin-right: 1rem; min-width: 80px; }
+.day-title { flex: 1; font-weight: 700; font-size: 1.1rem; color: var(--text-color); }
+.day-header i { font-size: 1.2rem; color: #b2bec3; }
+
+.day-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #fdfdfd;
 }
+
+.day-card.active .day-details { max-height: 1000px; padding: 1.5rem; border-top: 1px solid #eee; }
+.day-card.active .day-header { background-color: #f8f9fa; }
+.day-card.active .day-header i { color: var(--primary-color); }
+
+/* Strategy Box */
+.strategy-box {
+    background: rgba(108, 92, 231, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.strategy-box h4 { color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1rem; }
+.strategy-box p { font-size: 0.95rem; margin: 0; line-height: 1.5; color: #444; }
+
+.attractions-list li, .checklist li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    line-height: 1.4;
+}
+
+.tip-box {
+    margin-top: 1.5rem;
+    background: #fff8e1;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #b7791f;
+    border: 1px solid #f6e05e;
+}
+
+/* Orçamento V2 */
+.budget-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
 
 .budget-card {
     background: white;
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: var(--shadow);
-    border: 1px solid #eee;
-}
-
-.budget-icon {
-    font-size: 2rem;
-    color: var(--primary-blue);
-    margin-bottom: 1rem;
-}
-
-.budget-card h4 {
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.amount {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 0.5rem;
-}
-
-.note {
-    font-size: 0.8rem;
-    color: #999;
-}
-
-.budget-total {
-    background: var(--magic-gradient);
-    color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    grid-column: 1 / -1; /* Full width */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.total-amount {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-}
+.budget-card i { font-size: 1.8rem; color: #b2bec3; margin-bottom: 0.8rem; }
+.budget-card span { font-size: 0.9rem; color: #666; margin-bottom: 0.3rem; }
+.budget-card strong { font-size: 1.3rem; color: var(--text-color); }
+.budget-card small { font-size: 0.75rem; color: #999; margin-top: 0.3rem; }
 
-/* Footer */
-footer {
-    background: #333;
+.budget-card.success i { color: var(--success-color); }
+.budget-card.success strong { color: var(--success-color); }
+
+.budget-card.vip i { color: var(--vip-color); }
+
+.budget-card.total {
+    grid-column: 1 / -1;
+    background: var(--text-color);
     color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+.budget-card.total i { color: var(--primary-color); margin: 0; }
+.budget-card.total span { color: #ccc; margin: 0; font-size: 1.1rem; }
+.budget-card.total strong { color: white; font-size: 1.8rem; }
+.budget-card.total small { display: none; }
 
-/* Desktop Timeline Layout Adjustments */
-@media (min-width: 768px) {
-    .timeline-container::before {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.9rem; margin-top: 2rem; }
 
-    .timeline-card {
-        width: calc(50% - 40px); /* Fixed gap calculation */
-        margin-left: 0;
-    }
-
-    /* Odd children left, Even children right */
-    .timeline-card:nth-child(odd) {
-        margin-right: auto;
-        border-left: 0;
-        border-right: 5px solid transparent;
-        text-align: right;
-    }
-    
-    .timeline-card:nth-child(odd).universal { border-right-color: #023e8a; }
-    .timeline-card:nth-child(odd).disney { border-right-color: #7209b7; }
-    .timeline-card:nth-child(odd).mix { border-right-color: #00b4d8; }
-    .timeline-card:nth-child(odd).off { border-right-color: #fb8500; }
-
-    .timeline-card:nth-child(even) {
-        margin-left: auto;
-        border-left: 5px solid transparent; /* Restore/Ensure border */
-    }
-
-    .timeline-card:nth-child(odd) .card-header {
-        flex-direction: row-reverse;
-    }
-
-    .timeline-card:nth-child(odd) .day-badge {
-        margin-right: 0;
-        margin-left: 1rem;
-    }
-    
-    .timeline-card:nth-child(odd) .highlight {
-        flex-direction: row-reverse;
-    }
-
-    /* Dot Positioning */
-    .timeline-card::before {
-        width: 20px;
-        height: 20px;
-        top: 2rem; /* Align with header roughly */
-    }
-
-    .timeline-card:nth-child(odd)::before {
-        left: auto;
-        right: -52px; /* 40px gap + 10px half-dot + 2px line-adjust */
-    }
-
-    .timeline-card:nth-child(even)::before {
-        left: -52px; /* 40px gap + 10px half-dot + 2px line-adjust */
-        right: auto;
-    }
+@media (max-width: 600px) {
+    .budget-card.total { flex-direction: column; gap: 0.5rem; }
+    .hero { padding: 4rem 1rem 3rem; }
 }
