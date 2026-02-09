@@ -3,267 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orlando 2026: O Guia Definitivo</title>
+    <title>Orlando 2026: Master Plan</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Orlando 2026 🏰✨</h1>
-            <p class="subtitle">Estratégia VIP: Hilton RCI + Buffalo + Zero Filas</p>
-            <div class="date-badge">📅 17 a 24 de Maio (Semana RCI)</div>
-            <a href="#roteiro" class="cta-button">Ver Roteiro Tático 🗺️</a>
+        <div class="content">
+            <span class="tag">Projeto Integr8 Viagens</span>
+            <h1>Orlando 2026</h1>
+            <p>Estratégia RCI + Buffalo + VIP Experience</p>
+            <div class="stats">
+                <div class="stat">
+                    <strong>17-24</strong>
+                    <span>Maio</span>
+                </div>
+                <div class="stat">
+                    <strong>7</strong>
+                    <span>Pessoas</span>
+                </div>
+                <div class="stat">
+                    <strong>Zero</strong>
+                    <span>Custo Hotel</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <!-- Seção Hotel Rico -->
-        <section id="hotel" class="container">
-            <h2>🏨 Nossa Base: Hilton Pointe Orlando</h2>
-            <div class="hotel-detail-card">
-                <div class="hotel-image-area">
-                    <!-- Placeholder visual -->
-                    <div class="hotel-img-placeholder"><i class="fas fa-umbrella-beach"></i></div>
-                    <div class="hotel-price-tag">
-                        <span class="label">Custo Total (RCI)</span>
-                        <span class="price">C$ 658</span>
+    <main class="container">
+        
+        <!-- Seção Hotel -->
+        <section class="hotel-section">
+            <div class="section-title">
+                <h2>🏨 Nossa Base (RCI)</h2>
+                <p>Hilton Vacation Club Pointe Orlando</p>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-img" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800');">
+                    <div class="price-badge">
+                        <small>Custo para Nós</small>
+                        <strong>C$ 0</strong>
                     </div>
                 </div>
-                <div class="hotel-info">
-                    <h3>Hilton Vacation Club Pointe Orlando</h3>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> International Drive (Coração de Orlando)</p>
-                    
-                    <div class="features-grid">
-                        <div class="feature"><i class="fas fa-utensils"></i> Cozinha Completa</div>
-                        <div class="feature"><i class="fas fa-swimming-pool"></i> 2 Piscinas</div>
-                        <div class="feature"><i class="fas fa-users"></i> Acomoda 6-8</div>
-                        <div class="feature"><i class="fas fa-parking"></i> Estacionamento ~$30</div>
-                    </div>
-
-                    <p class="desc">Localização estratégica. Ao lado do WonderWorks e restaurantes a pé. Apartamento espaçoso ideal para grupos.</p>
-                    
-                    <div class="hotel-actions">
-                        <a href="https://www.hilton.com/en/hotels/mcoqvGV-hilton-vacation-club-pointe-orlando/" target="_blank" class="text-link">Visitar Site Oficial <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                <div class="hotel-body">
+                    <p class="hotel-desc">
+                        A taxa de <strong>C$ 658</strong> será custeada pela família convidada. 
+                        Localização premium na International Drive. Apartamento completo com cozinha.
+                    </p>
+                    <ul class="amenities">
+                        <li><i class="fas fa-users"></i> Acomoda 8 Pessoas</li>
+                        <li><i class="fas fa-kitchen-set"></i> Cozinha Completa</li>
+                        <li><i class="fas fa-parking"></i> Estacionamento Pago</li>
+                    </ul>
+                    <a href="https://www.hilton.com/en/hotels/mcoqvGV-hilton-vacation-club-pointe-orlando/" target="_blank" class="btn-outline">Ver Fotos Oficiais</a>
                 </div>
             </div>
         </section>
 
-        <!-- Timeline Roteiro Estratégico -->
-        <section id="roteiro" class="container">
-            <h2>🗺️ Roteiro Tático & Estratégia</h2>
-            <p class="instruction">Toque nos dias para ver o plano de ataque anti-filas!</p>
-            
+        <!-- Timeline Visual -->
+        <section class="timeline-section">
+            <div class="section-title">
+                <h2>🗓️ Itinerário Tático</h2>
+                <p>Toque nos cards para expandir as estratégias.</p>
+            </div>
+
             <div class="timeline">
                 
                 <!-- Dia 1 -->
-                <div class="day-card" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 1 (Dom)</span>
-                        <span class="day-title">Chegada & Abastecimento</span>
-                        <i class="fas fa-plane-arrival"></i>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a615109cc05?auto=format&fit=crop&w=800');">
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 1 (Dom)</span>
+                            <h3>Chegada & Logística</h3>
+                        </div>
                     </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>🎯 Missão do Dia</h4>
-                            <p>Chegar, pegar o carro (Minivan) e abastecer a geladeira.</p>
-                        </div>
-                        <ul class="checklist">
-                            <li><i class="fas fa-car"></i> Pegar carro em MCO</li>
-                            <li><i class="fas fa-shopping-cart"></i> Walmart Supercenter (Água, Café, Snacks)</li>
-                            <li><i class="fas fa-bed"></i> Check-in Hilton Pointe</li>
-                        </ul>
-                        <div class="tip-box">
-                            <strong>💡 Dica Pro:</strong> Compre capas de chuva no Walmart ($2) em vez de no parque ($15).
-                        </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-map-signs"></i> Estratégia de Chegada</summary>
+                            <div class="details-body">
+                                <p>Voo chegando em Orlando (MCO/TPA). Pegar a Minivan (Grand Caravan) para 7 pessoas + malas.</p>
+                                <p><strong>Atenção:</strong> Se tiverem muitas malas, talvez precisem de um Uber extra para as malas, pois 7 pessoas na Minivan lotam o porta-malas.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary><i class="fas fa-shopping-cart"></i> Compras Mercado</summary>
+                            <div class="details-body">
+                                <p>Parada obrigatória no <strong>Walmart Supercenter</strong>.</p>
+                                <ul>
+                                    <li>Água (fardo de 24)</li>
+                                    <li>Café da manhã (Ovos, Pão, Frutas)</li>
+                                    <li>Snacks para o parque</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Dia 2: Universal -->
-                <div class="day-card universal" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 2 (Seg)</span>
-                        <span class="day-title">Universal Studios Florida</span>
-                        <i class="fas fa-film"></i>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1534234828569-189f97e7a13c?auto=format&fit=crop&w=800');"> <!-- Harry Potter Vibe -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 2 (Seg)</span>
+                            <h3>Universal Studios</h3>
+                        </div>
                     </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>⚡ Estratégia Express Pass</h4>
-                            <p>Chegue às 08:30. Vá direto para o Beco Diagonal (fundo do parque) enquanto a multidão fica na entrada.</p>
-                        </div>
-                        <ul class="attractions-list">
-                            <li>✅ Harry Potter and the Escape from Gringotts</li>
-                            <li>✅ Revenge of the Mummy (Clássica!)</li>
-                            <li>✅ Despicable Me Minion Mayhem</li>
-                            <li>✅ Transformers: The Ride-3D</li>
-                        </ul>
-                        <div class="tip-box">
-                            <strong>🍔 Onde Comer:</strong> Leaky Cauldron (Almoço temático) ou saia para o CityWalk (Cowfish).
-                        </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-bolt"></i> Roteiro (Com Express)</summary>
+                            <div class="details-body">
+                                <p>Com o Express Pass, não precisamos correr. Cheguem às 09:00.</p>
+                                <ol>
+                                    <li>Minion Mayhem</li>
+                                    <li>Revenge of the Mummy</li>
+                                    <li>Transformers</li>
+                                    <li><strong>Almoço:</strong> Beco Diagonal (Leaky Cauldron)</li>
+                                    <li>Harry Potter & Escape from Gringotts</li>
+                                    <li>Hogwarts Express (Trem para o outro parque)</li>
+                                </ol>
+                            </div>
+                        </details>
+                        <details>
+                            <summary><i class="fas fa-lightbulb"></i> Dicas</summary>
+                            <div class="details-body">
+                                <p>O dragão em cima do banco Gringotts cospe fogo a cada 10 minutos. Ótimo para fotos/vídeos.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Dia 3: Islands -->
-                <div class="day-card universal" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 3 (Ter)</span>
-                        <span class="day-title">Islands of Adventure</span>
-                        <i class="fas fa-dragon"></i>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1628194468641-073c683b7936?auto=format&fit=crop&w=800');"> <!-- Rollercoaster -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 3 (Ter)</span>
+                            <h3>Islands of Adventure</h3>
+                        </div>
                     </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>🦖 VelociCoaster & Hagrid's</h4>
-                            <p><strong>Atenção:</strong> Hagrid's Motorbike NÃO aceita Express Pass (normalmente). Vá direto nela assim que o portão abrir (Rope Drop).</p>
-                        </div>
-                        <ul class="attractions-list">
-                            <li>✅ Hagrid’s Magical Creatures (Top 1)</li>
-                            <li>✅ VelociCoaster (Melhor montanha-russa)</li>
-                            <li>✅ Jurassic Park River Adventure (Molha!)</li>
-                            <li>✅ Harry Potter and the Forbidden Journey</li>
-                        </ul>
-                        <div class="tip-box">
-                            <strong>🎒 Levar:</strong> Chinelo ou roupa extra leve. As atrações de água aqui encharcam de verdade.
-                        </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-route"></i> Estratégia Hagrid's</summary>
+                            <div class="details-body">
+                                <p><strong>Hagrid's Motorbike NÃO aceita Express.</strong></p>
+                                <p>Temos que chegar 45 min antes do portão abrir (Rope Drop) e correr direto para ela, ou entrar na fila na hora do almoço (12:30).</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary><i class="fas fa-water"></i> Atrações Molhadas</summary>
+                            <div class="details-body">
+                                <p>Popeye e Dudley Do-Right encharcam até a alma. Levem chinelo e roupa seca na mochila, ou deixem para o final do dia.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Dia 4: Magic Kingdom -->
-                <div class="day-card disney" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 4 (Qua)</span>
-                        <span class="day-title">Magic Kingdom</span>
-                        <i class="fas fa-crown"></i>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1513416478584-37072521c7dc?auto=format&fit=crop&w=800');"> <!-- Castle -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 4 (Qua)</span>
+                            <h3>Magic Kingdom</h3>
+                        </div>
                     </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>⚡ Lightning Lane Multi Pass</h4>
-                            <p>Agende <strong>Tiana's Bayou</strong> e <strong>Big Thunder</strong> para a manhã. Compre o Single Pass de <strong>TRON</strong> para as 13h.</p>
-                        </div>
-                        <ul class="attractions-list">
-                            <li>✅ TRON Lightcycle / Run (Imperdível)</li>
-                            <li>✅ Seven Dwarfs Mine Train</li>
-                            <li>✅ Haunted Mansion</li>
-                            <li>✅ Pirates of the Caribbean</li>
-                        </ul>
-                        <div class="tip-box">
-                            <strong>🎆 Fogos:</strong> Happily Ever After às 21h. Pegue lugar na Main Street 45min antes.
-                        </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-magic"></i> Roteiro Lightning Lane</summary>
+                            <div class="details-body">
+                                <p>Agendamentos Prévios (Multi Pass):</p>
+                                <ul>
+                                    <li>09:30 - Tiana's Bayou Adventure</li>
+                                    <li>11:00 - Big Thunder Mountain</li>
+                                    <li>12:30 - Haunted Mansion</li>
+                                </ul>
+                                <p><strong>Single Pass (Pago Extra):</strong> TRON Lightcycle / Run (Agendar para 14h).</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary><i class="fas fa-camera"></i> Melhores Fotos</summary>
+                            <div class="details-body">
+                                <p>Lateral do Castelo (caminho para Liberty Square) é sempre vazio e tem a melhor luz.</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
-                <!-- Dia 5: Descanso -->
-                <div class="day-card off" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 5 (Qui)</span>
-                        <span class="day-title">Compras & Relax</span>
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>🛍️ Rota das Compras</h4>
-                            <p>Manhã na piscina do Hilton. Tarde nos Outlets.</p>
+                <!-- Dia 5: Compras -->
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1516140028867-27b0eb909405?auto=format&fit=crop&w=800');"> <!-- Shopping -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 5 (Qui)</span>
+                            <h3>Descanso & Compras</h3>
                         </div>
-                        <ul class="checklist">
-                            <li>📍 Orlando Vineland Premium Outlets (Marcas de Luxo)</li>
-                            <li>📍 Disney Springs (Lego Store, World of Disney)</li>
-                            <li>📍 Jantar: Cheesecake Factory ou Olive Garden</li>
-                        </ul>
+                    </div>
+                    <div class="card-content">
+                        <details open>
+                            <summary><i class="fas fa-map-marker-alt"></i> Rota dos Outlets</summary>
+                            <div class="details-body">
+                                <p><strong>Orlando Vineland Premium Outlets</strong> (Mais marcas de luxo, mais organizado).</p>
+                                <p>Endereço: 8200 Vineland Ave.</p>
+                                <p>Depois: Jantar no Olive Garden (clássico e barato).</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Dia 6: Epcot -->
-                <div class="day-card disney" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 6 (Sex)</span>
-                        <span class="day-title">Epcot (Mundo & Futuro)</span>
-                        <i class="fas fa-globe-americas"></i>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1632766324227-629532c24c23?auto=format&fit=crop&w=800');"> <!-- Spaceship Earth -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 6 (Sex)</span>
+                            <h3>Epcot (Guardians)</h3>
+                        </div>
                     </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>🚀 Guardians of the Galaxy</h4>
-                            <p>Compre o Single Pass para Guardians. É a melhor atração da Disney atualmente. Tente agendar Remy (Ratatouille) no Multi Pass.</p>
-                        </div>
-                        <ul class="attractions-list">
-                            <li>✅ Guardians of the Galaxy: Cosmic Rewind</li>
-                            <li>✅ Soarin' Around the World</li>
-                            <li>✅ Remy’s Ratatouille Adventure</li>
-                            <li>✅ Test Track (se estiver aberto/reformado)</li>
-                        </ul>
-                        <div class="tip-box">
-                            <strong>🌮 Comer:</strong> "Drinking/Eating Around the World". Prove snacks no México, Japão e França.
-                        </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-rocket"></i> Guardians of the Galaxy</summary>
+                            <div class="details-body">
+                                <p>Melhor montanha-russa da Disney. Exige compra de <strong>Single Pass</strong> ou Fila Virtual (Virtual Queue) às 7am em ponto.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary><i class="fas fa-utensils"></i> Comer pelo Mundo</summary>
+                            <div class="details-body">
+                                <p>Não reserve restaurante. Vá comendo petiscos nos países:</p>
+                                <ul>
+                                    <li>México: Tacos</li>
+                                    <li>França: Crepes/Sorvete</li>
+                                    <li>Alemanha: Pretzel</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
                 <!-- Dia 7: Animal Kingdom -->
-                <div class="day-card disney" onclick="toggleDetails(this)">
-                    <div class="day-header">
-                        <span class="day-number">Dia 7 (Sáb)</span>
-                        <span class="day-title">Animal Kingdom</span>
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <div class="day-details">
-                        <div class="strategy-box">
-                            <h4>🦁 Pandora (Avatar)</h4>
-                            <p>Flight of Passage é a prioridade. Compre o Single Pass ou chegue 45min antes de abrir. O parque fecha cedo (~19h).</p>
+                <div class="card-event">
+                    <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1598539097723-4e339b69992f?auto=format&fit=crop&w=800');"> <!-- Tree of Life -->
+                        <div class="card-overlay"></div>
+                        <div class="card-header">
+                            <span class="day-badge">Dia 7 (Sáb)</span>
+                            <h3>Animal Kingdom</h3>
                         </div>
-                        <ul class="attractions-list">
-                            <li>✅ Avatar Flight of Passage</li>
-                            <li>✅ Expedition Everest (Yeti)</li>
-                            <li>✅ Kilimanjaro Safaris (Faça de manhã cedo!)</li>
-                            <li>✅ Festival of the Lion King (Show AC)</li>
-                        </ul>
+                    </div>
+                    <div class="card-content">
+                        <details>
+                            <summary><i class="fas fa-leaf"></i> Avatar (Pandora)</summary>
+                            <div class="details-body">
+                                <p>Flight of Passage é a atração principal. Chegue cedo.</p>
+                                <p>Almoço: <strong>Satu'li Canteen</strong> (O melhor quick service da Disney).</p>
+                            </div>
+                        </details>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Seção Orçamento V2 -->
-        <section id="orcamento" class="container">
-            <h2>💰 Orçamento Otimizado (RCI + Buffalo)</h2>
-            <div class="budget-grid">
-                <div class="budget-card success">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Hospedagem</span>
-                    <strong>C$ 658</strong>
-                    <small>RCI Pago! (Economia de $3.8k)</small>
+        <!-- Orçamento V3 -->
+        <section class="budget-section">
+            <h2>💰 Investimento (Família Denis)</h2>
+            <p class="budget-subtitle">Baseado em 3 pessoas | Voo Buffalo | Hotel Custeado por Convidados</p>
+            
+            <div class="budget-container">
+                <!-- Coluna 1: Essencial -->
+                <div class="budget-col essential">
+                    <h3>Essencial</h3>
+                    <div class="budget-item">
+                        <span>Voos (Buffalo)</span>
+                        <strong>C$ 900</strong>
+                    </div>
+                    <div class="budget-item">
+                        <span>Carro (Minivan)</span>
+                        <strong>C$ 1.100</strong>
+                    </div>
+                    <div class="budget-item">
+                        <span>Ingressos (Base)</span>
+                        <strong>C$ 4.200</strong>
+                    </div>
+                    <div class="budget-item">
+                        <span>Comida/Extras</span>
+                        <strong>C$ 2.500</strong>
+                    </div>
+                    <div class="budget-item highlight">
+                        <span>Hospedagem (RCI)</span>
+                        <strong style="color: #00b894">C$ 0</strong>
+                    </div>
+                    <div class="budget-total">
+                        <small>Total Básico</small>
+                        <span>C$ 8.700</span>
+                    </div>
                 </div>
-                <div class="budget-card">
-                    <i class="fas fa-plane"></i>
-                    <span>Voos (Buffalo)</span>
-                    <strong>~C$ 900</strong>
-                    <small>3 Pessoas</small>
-                </div>
-                <div class="budget-card">
-                    <i class="fas fa-car"></i>
-                    <span>Minivan + Park</span>
-                    <strong>~C$ 1.400</strong>
-                    <small>7 Lugares + Hilton Parking</small>
-                </div>
-                <div class="budget-card vip">
-                    <i class="fas fa-bolt"></i>
-                    <span>Passes VIP</span>
-                    <strong>~C$ 1.765</strong>
-                    <small>Zero Filas Todos os Dias</small>
-                </div>
-                <div class="budget-card total">
-                    <i class="fas fa-calculator"></i>
-                    <span>Total Previsto</span>
-                    <strong>~C$ 11.423</strong>
-                    <small>Luxo com Preço de Econômica</small>
+
+                <!-- Coluna 2: Opcional VIP -->
+                <div class="budget-col vip">
+                    <h3>💎 Opcional VIP (Fura-Filas)</h3>
+                    <div class="budget-item">
+                        <span>Universal Express</span>
+                        <strong>C$ 925</strong>
+                    </div>
+                    <div class="budget-item">
+                        <span>Disney Multi Pass</span>
+                        <strong>C$ 600</strong>
+                    </div>
+                    <div class="budget-item">
+                        <span>Disney Single Pass</span>
+                        <strong>C$ 240</strong>
+                    </div>
+                    <div class="budget-total">
+                        <small>Adicional VIP</small>
+                        <span>+ C$ 1.765</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="grand-total">
+                <span>Total da Viagem (Com VIP)</span>
+                <strong>~C$ 10.465</strong>
+            </div>
         </section>
+
     </main>
 
     <footer>
-        <p>Planejado com ❤️ por Integr8 AI</p>
+        <p>Criado por Integr8 AI</p>
     </footer>
 
     <script src="script.js"></script>
